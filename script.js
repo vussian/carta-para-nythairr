@@ -125,3 +125,25 @@ function crearFlores(x, y) {
     }
 
 }
+function abrirCarta() {
+
+    const carta = document.getElementById("cartaSecreta");
+
+    carta.classList.add("activa");
+
+    crearCorazones();
+
+    crearFlores(
+        window.innerWidth / 2,
+        window.innerHeight / 2
+    );
+
+}
+
+function cerrarCarta() {
+
+    const carta = document.getElementById("cartaSecreta");
+
+    carta.classList.remove("activa");
+
+}
